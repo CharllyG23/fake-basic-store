@@ -1,0 +1,20 @@
+header{
+    @apply flex-col fixed gap-y-4 lg:gap-0 lg:flex-row top-0 left-0 w-full flex justify-between mx-auto px-6 lg:px-32 items-center z-10 p-3 bg-orange-400;
+
+    .nav{
+        @apply flex justify-center flex-wrap gap-x-8  gap-y-4 lg:gap-x-8  items-center;
+        li{
+            @apply text-white font-bold text-base;
+        }
+    }
+    .search {
+        @apply w-full relative flex;
+        
+        &__Term {
+            @apply w-full border-2 border-white border-r-0 h-11 p-2 rounded font-normal outline-none text-slate-500 focus:bg-slate-50; 
+        }
+        &__Button {
+            @apply w-16 h-11 bg-orange-600 rounded cursor-pointer;
+        }
+    }
+}
