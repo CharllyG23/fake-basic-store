@@ -1,0 +1,31 @@
+.cards {
+  @apply w-full max-w-[300px];
+
+  h1 {
+    @apply justify-end pb-6 text-4xl font-bold text-slate-800;
+  }
+
+  .card{
+    @apply bg-white rounded-md border flex flex-col overflow-hidden h-[350px];
+
+    &:hover{
+      @apply shadow-xl cursor-pointer transform;
+    }
+
+    &_content {
+      @apply p-5 text-slate-800;
+    }
+    &_image{
+      @apply flex justify-center items-center pb-4 pt-7;
+      img{
+        @apply w-24 overflow-hidden;
+      }
+    }
+    &_title{
+      @apply text-base text-slate-800 font-semibold;
+    }
+  }
+  .btn{
+    @apply text-white text-base rounded-sm font-semibold cursor-pointer bg-orange-400 w-full h-9 hover:bg-orange-300;
+  } 
+}

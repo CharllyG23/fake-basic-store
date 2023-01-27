@@ -2,7 +2,10 @@
     <header>
         <a href="#" class="logo"><img :src="store" alt="store" width="120" /></a>
         <ul class="nav">
-            <li><a href="#">Categoria</a></li>
+            <li><a href="#">Eletrônico</a></li>
+            <li><a href="#">Jóias</a></li>
+            <li><a href="#">Roupas para Homen</a></li>
+            <li><a href="#">Roupas Femeninas</a></li>
             <li><button><icon-bag /></button>5</li>
             <li>
                 <div class="search">
