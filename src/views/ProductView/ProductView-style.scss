@@ -1,0 +1,101 @@
+.product{
+    @apply max-w-screen-xl mx-auto px-10 pt-80 lg:pt-48;
+
+    &_title{
+        @apply text-xl lg:text-3xl text-slate-800 font-bold pb-12;
+    }
+
+    &_desc{
+        @apply flex flex-col lg:flex-row text-slate-500 justify-between;
+
+        &_content{
+            @apply w-full max-w-[400px];
+
+            .btn{
+                @apply bg-orange-400 text-white p-2 rounded text-lg font-medium w-full;
+            }
+        }
+
+        p{
+            @apply text-base font-normal pb-4;
+        }
+
+        &_image{
+            @apply border p-10 rounded-md shadow;
+            img{
+                @apply w-full lg:w-72;
+            }
+        }
+
+       &_info{
+        @apply border-b pt-6;
+       }
+        .description{
+            @apply text-lg text-slate-800 font-medium pb-1;
+        }
+
+        span{
+             @apply text-sm;
+        }
+
+        &--edit {
+			@apply w-full py-8 flex justify-between;
+
+			.counter {
+				@apply flex
+                    items-center
+                    w-max
+                    rounded-md
+                    border
+                    border-solid
+                    border-gray-200;
+
+				button {
+					@apply w-9
+                        h-8
+                        flex
+                        items-center
+                        justify-center
+                        bg-slate-100
+                        transition-all
+                        duration-200
+                        hover:bg-slate-200
+                        focus:shadow-none
+                        focus:outline-none;
+
+					.minus {
+						height: 3px;
+						@apply w-3 bg-orange-400;
+					}
+
+                    .plus{
+                        @apply text-orange-400 font-extrabold text-xl pb-1;
+                    }
+
+					&:first-child {
+						@apply rounded-l-md;
+					}
+
+					&:last-child {
+						@apply rounded-r-md;
+					}
+
+					&:disabled {
+						@apply cursor-not-allowed opacity-40 hover:bg-transparent;
+					}
+				}
+
+				div {
+					min-width: 2.25rem;
+
+					@apply px-1 
+                        h-7
+                        flex 
+                        flex-none 
+                        items-center 
+                        justify-center;
+				}
+			}
+		}
+    }
+}

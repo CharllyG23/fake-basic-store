@@ -1,6 +1,8 @@
 <template>
     <header>
-        <a href="#" class="logo"><img :src="store" alt="store" width="120" /></a>
+        <router-link to="/">
+            <img :src="store" alt="store" width="120" class="logo"/>
+        </router-link>
         <ul class="nav">
             <li><a href="#">Eletrônico</a></li>
             <li><a href="#">Jóias</a></li>

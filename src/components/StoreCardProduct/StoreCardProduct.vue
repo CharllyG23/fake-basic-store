@@ -1,6 +1,6 @@
 <template>
-  <div class="cards">
-    <div class="cards_item">
+  <router-link target='_blank'  :to="{name: 'product', params:{ id: products.id}}">
+    <div class="cards">
       <div class="card">
         <div class="card_image">
           <img :src="products.image" alt="produtos" />
@@ -11,7 +11,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </router-link>
 </template>
 <script setup>
 import { computed } from 'vue'
