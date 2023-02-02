@@ -9,7 +9,7 @@
         @apply flex flex-col lg:flex-row text-slate-500 justify-between;
 
         &_content{
-            @apply w-full max-w-[400px];
+            @apply w-full lg:max-w-[400px];
 
             .btn{
                 @apply bg-orange-400 text-white p-2 rounded text-lg font-medium w-full;
@@ -23,7 +23,7 @@
         &_image{
             @apply border p-10 rounded-md shadow;
             img{
-                @apply w-full lg:w-72;
+                @apply w-full lg:w-96;
             }
         }
 

@@ -4,7 +4,7 @@
     </div>
     <main class="home">
       <div class="home_wrap">
-        <h1 class="home_title">Produtos para você</h1>
+        <h1 class="home_wrap_title">Produtos para você</h1>
         <div class="home_wrap__content">
           <store-card-product  v-for="card in data" :key="card.index" :products="card" />
         </div>

@@ -1,0 +1,7 @@
+.category{
+    @apply max-w-screen-2xl mx-auto px-7 lg:px-16 pt-72 lg:pt-36;
+
+    &_title{
+        @apply text-4xl text-slate-800 pb-10 font-bold;
+      }
+}

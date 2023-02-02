@@ -1,5 +1,5 @@
 <template>
-  <router-link target='_blank'  :to="{name: 'product', params:{ id: products.id}}">
+  <router-link target='_blank' :to="{name: 'product', params:{ id: products.id}}">
     <div class="cards">
       <div class="card">
         <div class="card_image">

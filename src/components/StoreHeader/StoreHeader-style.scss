@@ -4,7 +4,7 @@ header{
     .nav{
         @apply flex justify-center flex-wrap gap-x-8  gap-y-4 lg:gap-x-8  items-center;
         li{
-            @apply text-white font-bold text-base;
+            @apply text-white font-bold text-base cursor-pointer;
         }
     }
     .search {

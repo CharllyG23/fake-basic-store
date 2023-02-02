@@ -53,7 +53,6 @@ const fetchProductId = () =>{
 
 onMounted(()=>{
     fetchProductId()
-    console.log(route.params.id)
 })
 </script>
 <style lang="scss" scoped>

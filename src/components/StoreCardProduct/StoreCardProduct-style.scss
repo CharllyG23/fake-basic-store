@@ -6,7 +6,7 @@
   }
 
   .card{
-    @apply bg-white rounded-md border flex flex-col overflow-hidden h-[350px];
+    @apply bg-white rounded-md border flex flex-col justify-end overflow-hidden h-[350px];
 
     &:hover{
       @apply shadow-xl cursor-pointer transform;
