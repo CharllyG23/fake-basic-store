@@ -14,7 +14,7 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import StoreCardProduct from '../../components/StoreCardProduct/StoreCardProduct.vue'
-import banner from '../../assets/image/banner.jpg'
+import banner from '../../assets/image/banner.svg'
 
 const data = ref({})
 
@@ -22,8 +22,8 @@ const getProduct = () =>{
   fetch('https://fakestoreapi.com/products')
     .then(res=>res.json())
     .then(result =>{
-      console.log(data)
       data.value = result
+      console.log("prdocutos", data)
     })
   }
 

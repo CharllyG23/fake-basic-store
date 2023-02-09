@@ -5,9 +5,11 @@
         <div class="card_image">
           <img :src="products.image" alt="produtos" />
         </div>
+        <h2 class="card_title">{{ products.title }}</h2>
         <div class="card_content">
-          <h2 class="card_title">{{ products.title }}</h2>
-          <h2 class="card_price py-4">{{ products.price }}</h2>
+          <h2 class="card_price ">{{ products.price }}</h2>
+          <p class="card_price ">{{ products.rating.count }} unidades</p>
+          <h2 class="card_price ">{{ products.rating.rate }}</h2>
         </div>
       </div>
     </div>

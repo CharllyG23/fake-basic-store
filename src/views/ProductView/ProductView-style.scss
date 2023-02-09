@@ -21,7 +21,7 @@
         }
 
         &_image{
-            @apply border p-10 rounded-md shadow;
+            @apply pt-1 lg:pt-10;
             img{
                 @apply w-full lg:w-96;
             }
